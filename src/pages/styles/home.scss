@@ -1,0 +1,10 @@
+@import "../../Styles/__variables.scss";
+
+.main-page-home-container {
+  padding: 40px 20px;
+  height: 100%;
+  overflow: auto;
+  @media (max-width: 700px) {
+    padding: 30px 0;
+  }
+}

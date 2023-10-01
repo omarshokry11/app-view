@@ -1,0 +1,43 @@
+@import "../../../Styles/__variables.scss";
+
+.main-resume-container {
+  background-color: $thirdColor;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  .icon-item {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    span {
+      display: inline-block;
+      margin: 0 10px;
+      display: inline-block;
+      border: 1px solid #ececec;
+      border-radius: 8px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      .svg-inline--fa {
+        font-size: 1rem;
+        color: #0b0b0b;
+      }
+    }
+  }
+  .resum-content {
+    margin-top: 25px;
+    background-color: #f1f1f1;
+    height: 600px;
+    width: 700px;
+    border-radius: 8px;
+    @media (max-width: 1024px) {
+      width: 100%;
+      height: 500px;
+    }
+    @media (max-width: 700px) {
+      height: 400px;
+    }
+  }
+}

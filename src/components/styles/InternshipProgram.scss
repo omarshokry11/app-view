@@ -1,0 +1,94 @@
+@import "../../Styles/__variables.scss";
+
+.main-internship-container {
+  .main-nav-item {
+    h4 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: $mainColor;
+      margin: 0;
+      @media (max-width: 1280px) {
+        font-size: 1.2rem;
+      }
+      @media (max-width: 1114px) {
+        font-size: 1rem;
+      }
+    }
+    span {
+      color: $fourColor;
+      font-size: 0.9rem;
+      font-weight: 400;
+      margin-top: 10px;
+      display: block;
+    }
+  }
+  .main-search-item {
+    margin: 50px 0 35px;
+    background-color: $thirdColor;
+    height: 48px;
+    line-height: 30px;
+    border-radius: 10px;
+    padding: 7px 10px;
+    border: 1px solid #f3f3f3;
+    .svg-inline--fa {
+      color: #b0babf;
+      width: 15px;
+      height: 15px;
+    }
+    input {
+      margin-left: 10px;
+      width: 90%;
+      outline: none;
+      border: none;
+      @media (max-width: 1280px) {
+        width: 85%;
+      }
+      @media (max-width: 700px) {
+        width: 90%;
+      }
+      &::placeholder {
+        color: #9aa6ac;
+        font-size: 14px;
+      }
+    }
+  }
+  .main-item-filter-container {
+    background-color: $thirdColor;
+    h6 {
+      font-size: 14px;
+      font-weight: 500;
+      color: $fourColor;
+      margin: 0;
+    }
+    .filter-item-header {
+      position: relative;
+      padding: 20px 15px;
+      span {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        color: $fourColor;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+    .filter-item {
+      position: relative;
+      padding: 18px 16px;
+      border-top: 1px solid rgba(128, 128, 128, 0.084);
+      .icon-doc {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .icon-arrow {
+        position: absolute;
+        right: 25px;
+        top: 7px;
+        .svg-inline--fa {
+          color: $mainColor;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

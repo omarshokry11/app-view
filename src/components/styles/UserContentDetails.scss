@@ -1,0 +1,151 @@
+@import "../../Styles//__variables.scss";
+
+.main-user-content-details-container {
+  .user-profile-header {
+    background-color: $thirdColor;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1024px) {
+      display: block;
+      text-align: center;
+    }
+    .profile-img {
+      flex: 0.07;
+      @media (max-width: 1024px) {
+        flex: 1;
+      }
+      span {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.8rem;
+        border-radius: 50%;
+        background-color: $backgroundColor;
+      }
+    }
+    .user-profile-details {
+      flex: 0.73;
+      @media (max-width: 1024px) {
+        flex: 1;
+        margin-bottom: 10px;
+      }
+      .user-profile {
+        display: flex;
+        align-items: center;
+        @media (max-width: 1024px) {
+          display: block;
+        }
+        .profile-name {
+          font-size: 0.8rem;
+          font-weight: 700;
+          color: $fourColor;
+          margin-right: 5px;
+          margin-bottom: 0;
+          @media (max-width: 1024px) {
+            flex: 1;
+          }
+        }
+        .profile-item {
+          display: inline-block;
+          font-size: 0.5rem;
+          width: fit-content;
+          padding: 0 5px;
+          border-radius: 10px;
+          background-color: $backgroundColor;
+          margin-right: 3px;
+          @media (max-width: 1024px) {
+            flex: 1;
+          }
+        }
+      }
+      .user-details {
+        span {
+          display: inline-block;
+          font-size: 0.7rem;
+          margin: 0 5px;
+        }
+        .email-user {
+          padding: 0 5px;
+          border-right: 1px solid $defualtColor;
+          border-left: 1px solid $defualtColor;
+        }
+      }
+      .user-profile-tag {
+        span {
+          color: #808ea3;
+          background-color: #f5f8ff;
+          border-radius: 10px;
+          font-size: 0.7rem;
+          display: inline-block;
+          margin-right: 5px;
+          padding: 0 10px;
+        }
+      }
+    }
+    .score-profile {
+      flex: 0.2;
+      P {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 25px;
+        background-color: $thirdColor;
+        color: $defualtColor;
+        border-radius: 10px;
+        padding: 8px 10px;
+        box-shadow: 0 0 10px 10px #dddddd23;
+        position: relative;
+        span {
+          color: #6b6b6b;
+          background-color: #f3fafc;
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          font-size: 0.8rem;
+          transform: translate(-20px, -50%);
+          display: inline-block;
+          width: 28px;
+          height: 26px;
+          line-height: 26px;
+          text-align: center;
+          border-radius: 50%;
+        }
+      }
+      span {
+        color: #a8a8a8;
+        font-size: 0.6rem;
+        text-align: right;
+        display: block;
+      }
+      @media (max-width: 1024px) {
+        flex: 1;
+      }
+    }
+  }
+  .main-profile-item {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 834px) {
+      display: block;
+    }
+    .active {
+      color: $mainColor;
+      border-bottom: 2px solid $mainColor;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+      @media (max-width: 834px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

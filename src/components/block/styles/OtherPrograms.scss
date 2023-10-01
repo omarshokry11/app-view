@@ -1,0 +1,60 @@
+@import "../../../Styles/__variables.scss";
+
+.main-other-program-container {
+  background-color: $thirdColor;
+  border-radius: 10px;
+  padding: 15px;
+  .other-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .other-icon {
+      color: #0b0b0b;
+      display: inline-block;
+      border: 1px solid #ececec;
+      border-radius: 8px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      .svg-inline--fa {
+        font-size: 1.1rem;
+      }
+    }
+    .other-details {
+      flex: 0.8;
+      p {
+        color: #5f5f5f;
+        font-size: 0.7rem;
+        font-weight: 500;
+      }
+      h6 {
+        color: #0b0b0b;
+        margin-bottom: 10px;
+        font-size: 0.8rem;
+      }
+    }
+    .active {
+      flex: 0.1;
+      color: #9ddc89;
+      background-color: #dbf5d3;
+      font-size: 0.75rem;
+      border-radius: 10px;
+      padding: 1px 25px;
+      text-align: center;
+    }
+    .disqualified {
+      flex: 0.1;
+      color: #fc402b;
+      background-color: #fea095;
+      font-size: 0.75rem;
+      border-radius: 10px;
+      padding: 1px 25px;
+      text-align: center;
+    }
+  }
+  .border-top {
+    padding: 10px 0;
+    border-top: 1px solid #eeeeee;
+  }
+}

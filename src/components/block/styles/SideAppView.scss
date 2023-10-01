@@ -1,0 +1,187 @@
+@import "../../../Styles/__variables.scss";
+
+.main-side-app-view-container {
+  .opportunity-item {
+    background-color: $thirdColor;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    span {
+      display: inline-block;
+      font-weight: 600;
+    }
+    .sip-item {
+      margin-right: 15px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      background-color: $backgroundColor;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 0.7rem;
+      font-weight: 600;
+      @media (max-width: 1114px) {
+        margin-right: 3px;
+      }
+      @media (max-width: 820px) {
+        width: 17px;
+        height: 17px;
+        line-height: 17px;
+        margin-right: 5px;
+        font-size: 0.5rem;
+      }
+      @media (max-width: 700px) {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 0.7rem;
+      }
+    }
+    .text-item {
+      margin-right: 15px;
+      border-right: 2px solid #eef2ff;
+      border-left: 2px solid #eef2ff;
+      padding: 0 5px;
+      font-size: 0.7rem;
+      @media (max-width: 1114px) {
+        margin-right: 3px;
+      }
+      @media (max-width: 820px) {
+        font-size: 0.6rem;
+      }
+      @media (max-width: 700px) {
+        font-size: 0.7rem;
+      }
+    }
+    .num-item {
+      border-right: 2px solid #eef2ff;
+      width: 15%;
+      margin-right: 5px;
+      font-size: 0.75rem;
+      @media (max-width: 1114px) {
+        width: 10%;
+      }
+      @media (max-width: 820px) {
+        font-size: 0.6rem;
+        width: 15%;
+      }
+      @media (max-width: 700px) {
+        font-size: 0.7rem;
+      }
+    }
+    .icon-item {
+      width: 5%;
+      .svg-inline--fa {
+        font-size: 0.7rem;
+        @media (max-width: 820px) {
+          font-size: 0.6rem;
+        }
+        @media (max-width: 700px) {
+          font-size: 0.7rem;
+        }
+      }
+      @media (max-width: 1114px) {
+        width: 2%;
+      }
+    }
+  }
+  .search-item {
+    margin-bottom: 10px;
+    background-color: $thirdColor;
+    height: 48px;
+    line-height: 30px;
+    border-radius: 10px;
+    padding: 7px 10px;
+    border: 1px solid #f3f3f3;
+    .svg-inline--fa {
+      color: #b0babf;
+      width: 15px;
+      height: 15px;
+    }
+    input {
+      margin-left: 10px;
+      width: 90%;
+      outline: none;
+      border: none;
+      @media (max-width: 1280px) {
+        width: 85%;
+      }
+      @media (max-width: 700px) {
+        width: 90%;
+      }
+      &::placeholder {
+        color: #9aa6ac;
+        font-size: 14px;
+      }
+    }
+  }
+  .main-content-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: $thirdColor;
+    padding: 10px;
+    border-radius: 8px;
+    @media (max-width: 1024px) {
+      display: block;
+    }
+    .check-all {
+      flex: 0.4;
+      @media (max-width: 1024px) {
+        flex: 1;
+        margin-bottom: 10px;
+      }
+      .text-color {
+        color: $mainColor;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      .num-item {
+        background-color: $secondColor;
+        color: $mainColor;
+        border-radius: 20px;
+        width: fit-content;
+        padding: 0 10px;
+        font-size: 0.7rem;
+        margin-left: 5px;
+      }
+    }
+    .head-items {
+      flex: 0.6;
+      @media (max-width: 1024px) {
+        flex: 1;
+      }
+      .head-item {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 0.8rem;
+        color: $fourColor;
+        font-weight: 500;
+        @media (max-width: 1024px) {
+          margin-left: 0;
+        }
+        .num-item {
+          display: inline-block;
+          margin-left: 5px;
+          background-color: #eff1fd;
+          color: #22215b;
+          border-radius: 20px;
+          width: fit-content;
+          padding: 0 10px;
+          font-size: 0.7rem;
+        }
+      }
+      .border-item {
+        border-left: 2px solid #f3f3f4;
+        border-right: 2px solid #f3f3f4;
+        padding: 0 7px;
+        @media (max-width: 1024px) {
+          border-left: none;
+        }
+      }
+    }
+  }
+}

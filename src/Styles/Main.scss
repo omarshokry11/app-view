@@ -1,0 +1,76 @@
+@import "./__variables.scss";
+
+.main-app-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $backgroundColor;
+  @media (max-width: 700px) {
+    display: block;
+  }
+  .main-sidebar-content {
+    flex: 0.04;
+    height: 100%;
+    overflow-y: auto;
+    @media (max-width: 1280px) {
+      flex: 0.06;
+    }
+    @media (max-width: 900px) {
+      flex: 0.1;
+    }
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+  .main-pages-content {
+    height: 100vh;
+    overflow: auto;
+    flex: 0.96;
+    @media (max-width: 1280px) {
+      flex: 0.94;
+    }
+    @media (max-width: 900px) {
+      flex: 0.9;
+    }
+    @media (max-width: 700px) {
+      flex: 1;
+    }
+  }
+}
+
+.checkbox-item {
+  display: inline-block;
+  margin-right: 10px;
+  outline: none;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.title-person {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: $fourColor;
+  margin-bottom: 15px;
+}
+
+.main-side-bar-block {
+  display: none;
+  @media (max-width: 700px) {
+    display: block;
+  }
+  .dropdown-sidebar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    div {
+      width: 30px;
+      height: 4px;
+      margin-bottom: 2px;
+      background-color: #000;
+    }
+  }
+}
